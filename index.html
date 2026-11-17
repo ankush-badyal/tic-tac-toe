@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A small tic-tac-toe game rendered with PixiJS."
+    />
+    <title>Tic-tac-toe</title>
+  </head>
+  <body>
+    <main class="game">
+      <header class="game__header">
+        <p class="eyebrow">PIXEL PLAYGROUND</p>
+        <h1>Tic-tac-toe</h1>
+        <p class="game__intro">A simple starting point for exploring game strategies.</p>
+      </header>
+      <section class="game__panel" aria-label="Tic-tac-toe game">
+        <p id="game-status" class="game__status" aria-live="polite"></p>
+        <div id="board" class="board">
+          <div
+            id="board-controls"
+            class="board__controls"
+            role="group"
+            aria-label="Game board"
+          ></div>
+        </div>
+        <button id="reset-button" class="reset-button" type="button">
+          New game
+        </button>
+      </section>
+      <p class="game__footer">Two players · Take turns · Three in a row wins</p>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
