@@ -1,5 +1,6 @@
 import { Application, Container, Graphics } from "pixi.js";
 import { createInitialGame, playMove, type GameState } from "./game";
+// @ts-expect-error CSS imports are handled by the bundler.
 import "./style.css";
 
 const boardElement = document.querySelector<HTMLDivElement>("#board");
